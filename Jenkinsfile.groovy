@@ -22,22 +22,22 @@ pipeline {
         }
         stage('Build Solution') {
             steps {
-                //bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
+                bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
             }
         }
 		stage('Unit Test Stage') {
             steps {
-                //bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
+                //bat ""
             }
         }
 		stage('Test Enviroment Deploy') {
             steps {
-                //bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
+                //bat ""
             }
         }
 		stage('Production Enviroment Deploy') {
             steps {
-                //bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
+                //bat ""
             }
         }
     }
