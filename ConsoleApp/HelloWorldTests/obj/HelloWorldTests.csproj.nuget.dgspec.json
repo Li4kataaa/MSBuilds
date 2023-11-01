@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj": {}
+    "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj": {}
   },
   "projects": {
-    "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\ilian_sharkov\\.nuget\\packages\\",
-        "outputPath": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj": {
+    "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj",
+        "projectUniqueName": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj",
         "projectName": "HelloWorldTests",
-        "projectPath": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj",
+        "projectPath": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj",
         "packagesPath": "C:\\Users\\ilian_sharkov\\.nuget\\packages\\",
-        "outputPath": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\HelloWorldTests\\obj\\",
+        "outputPath": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\HelloWorldTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -95,8 +95,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj": {
-                "projectPath": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj"
+              "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj": {
+                "projectPath": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\ConsoleApp1\\ConsoleApp1.csproj"
               }
             }
           }

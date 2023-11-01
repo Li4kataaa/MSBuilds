@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/36fq0RFqDVoWkJUBIcODMCerXqyXSyMn0jwwloJn7eEH2SHLeIoqbXXkapC+UQgJvtjuZvfFyAhMQS9+2kRRw==",
+  "dgSpecHash": "bneZn2+3K3I8J71MUNicC8eCtA0QBEU673ORjmRwZiJGFP9hXkzjj4zF1ndgGBUGLrcaPQImhYPEoi09jKFnbw==",
   "success": true,
-  "projectFilePath": "C:\\tools Files\\Jenkins\\MSBuilds\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj",
+  "projectFilePath": "C:\\tools Files\\Jenkins\\MSBuilds\\ConsoleApp\\HelloWorldTests\\HelloWorldTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ilian_sharkov\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\ilian_sharkov\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
