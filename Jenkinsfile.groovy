@@ -30,6 +30,11 @@ pipeline {
                 bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
             }
         }
+	    stage('Vulnerability Testing Stage') {
+            steps {
+                bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
+            }
+        }
 		stage('Test Enviroment Deploy') {
             steps {
                 bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
