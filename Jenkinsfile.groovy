@@ -27,17 +27,17 @@ pipeline {
         }
 		stage('Unit Test Stage') {
             steps {
-                //bat ""
+                bat ""
             }
         }
 		stage('Test Enviroment Deploy') {
             steps {
-                //bat ""
+                bat ""
             }
         }
 		stage('Production Enviroment Deploy') {
             steps {
-                //bat ""
+                bat ""
             }
         }
     }
