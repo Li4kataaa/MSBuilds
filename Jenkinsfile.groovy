@@ -16,29 +16,47 @@ pipeline {
     stages {
         stage('Restore NuGet For Solution') {
             steps {
+			script {
+                    bat 'nuget restore ConsoleApp1.sln'
+                }
                 //  '--no-cache' to avoid a shared cache--if multiple projects are running NuGet restore, they can collide.
-                bat "dotnet restore --nologo --no-cache"
+                //bat "dotnet restore --nologo --no-cache"
             }
+			}
         }
         stage('Build Solution') {
             steps {
-                bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
+                bat 'msbuild ConsoleApp1.sln /p:Configuration=Release'
             }
         }
 		stage('Unit Testing Stage') {
             steps {
-                bat ""
+			script {
+                bat 'dotnet test HelloWordTests/HelloWordTests.csproj'
             }
+			}
         }
 		stage('Test Enviroment Deploy') {
             steps {
-                bat ""
+			script {
+                bat 'xcopy /s /y "ConsoleApp1\\*" "\\test-server\\wwwroot"'
+            }
+			}
+        }
+        stage('Manual Approval for Production Deployment') {
+            steps {
+                script {
+                    // Pause and wait for manual approval
+                    input message: 'Proceed with production deployment?', submitter: 'admin'
+                }
             }
         }
 		stage('Production Enviroment Deploy') {
             steps {
-                bat ""
+                script {
+				bat 'xcopy /s /y "ConsoleApp1\\*" "\\production-server\\wwwroot"'
             }
+			}
         }
     }
     post {
