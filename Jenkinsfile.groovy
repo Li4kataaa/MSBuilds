@@ -18,22 +18,22 @@ pipeline {
             steps {
                 script {
 			bat "dotnet restore --nologo --no-cache"
-			//bat "dotnet build --nologo -c Release --no-restore"
 			def projectDirectory = "C:\\data\\jenkins_home\\workspace\\ldtestProjects_MSBuilds_MSBuilds\\ConsoleApp\\ConsoleApp1"
-                    // Navigate to the project directory
                     dir(projectDirectory) {
-                        // Run the dotnet build command
                         bat "dotnet build -c Release"
 		    }
-			print 'Hello World!'
+			print 'Excelent Build!'
                 }
             }
         }
 		stage('UTests') {
             steps {
                 script {
+			def projectDirectory = "C:\\data\\jenkins_home\\workspace\\ldtestProjects_MSBuilds_MSBuilds\\ConsoleApp\\HelloWorldTests"
+                    dir(projectDirectory) {
 			bat "dotnet test"
-                        print 'Hello World!'
+		    }
+                        print 'Excelent Tests!'
                 }
             }
         }
