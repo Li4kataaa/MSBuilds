@@ -26,7 +26,7 @@ pipeline {
 		stage('UTests') {
             steps {
                 script {
-			bat 'dotnet test'
+			bat "dotnet test"
                         print 'Hello World!'
                 }
             }
