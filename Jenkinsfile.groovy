@@ -17,7 +17,9 @@ pipeline {
         stage('Build!') {
             steps {
                 script {
-                    print 'Hello World!'
+			def nuget = "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\NuGet\\NuGet.Build.Tasks.Console.exe"
+                        bat "nuget restore ConsoleApp1.sln" // For Windows
+                    // print 'Hello World!'
                 }
             }
         }
