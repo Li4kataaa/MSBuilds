@@ -40,7 +40,7 @@ pipeline {
 		stage('Vulnerability Check') {
             steps {
                 script {
-                    print 'Hello World!'
+                    print 'NOT IMPLEMENTED!'
                 }
             }
         }
