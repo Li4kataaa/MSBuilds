@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
 			//bat "dotnet restore --nologo --no-cache"
-			bat "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
+			bat "dotnet build --nologo -c Release --no-restore"
 			print 'Hello World!'
                 }
             }
