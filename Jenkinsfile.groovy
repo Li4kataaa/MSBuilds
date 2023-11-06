@@ -74,9 +74,9 @@ pipeline {
         }
     }
 
-post {
-        cleanup {
-            cleanWs(deleteDirs: true, disableDeferredWipeout: true, notFailBuild: true)
-        }
-    }
+//post {
+        //cleanup {
+          //  cleanWs(deleteDirs: true, disableDeferredWipeout: true, notFailBuild: true)
+        //}
+    //}
 }
