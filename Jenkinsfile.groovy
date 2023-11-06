@@ -47,7 +47,7 @@ pipeline {
 		stage('Deploy Test') {
             steps {
                 script {
-                    print 'Hello World!'
+                   print 'NOT IMPLEMENTED!'
                 }
             }
         }
@@ -68,7 +68,7 @@ pipeline {
 		stage('Deploy Production') {
             steps {
                 script {
-                    print 'Hello World!'
+                    print 'NOT IMPLEMENTED!'
                 }
             }
         }
