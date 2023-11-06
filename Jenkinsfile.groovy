@@ -54,7 +54,7 @@ pipeline {
                     )
                     //if (userInput == null || userInput == false) {
                     //   error('Production deployment not approved. Aborting.')
-                    }
+                    //}
                 }
             }
         }
@@ -66,3 +66,4 @@ pipeline {
             }
         }
     }
+}
