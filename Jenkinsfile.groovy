@@ -17,7 +17,7 @@ pipeline {
         stage('Build!') {
             steps {
                 script {
-			//bat "dotnet restore --nologo --no-cache"
+			bat "dotnet restore --nologo --no-cache"
 			bat "dotnet build --nologo -c Release --no-restore"
 			print 'Hello World!'
                 }
