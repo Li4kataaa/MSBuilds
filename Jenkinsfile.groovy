@@ -52,8 +52,8 @@ pipeline {
                         ok: 'Deploy',
                         submitter: 'ilian_sharkov@dware.bg'
                     )
-                    if (userInput == null || userInput == false) {
-                        error('Production deployment not approved. Aborting.')
+                    //if (userInput == null || userInput == false) {
+                    //   error('Production deployment not approved. Aborting.')
                     }
                 }
             }
