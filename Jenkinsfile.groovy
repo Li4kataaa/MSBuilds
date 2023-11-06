@@ -45,7 +45,14 @@ pipeline {
 		stage('Manual Approval for Production Deployment') {
             steps {
                 script {
-                    print 'Hello World!'
+                   def userInput = input(
+                        message: 'Approve Production Deployment',
+                        ok: 'Deploy',
+                        submitter: 'ilian_sharkov@dware.bg'
+                    )
+                    if (userInput == null || userInput == false) {
+                        error('Production deployment not approved. Aborting.')
+                    }
                 }
             }
         }
