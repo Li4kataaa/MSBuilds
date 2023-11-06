@@ -79,4 +79,3 @@ post {
             cleanWs(deleteDirs: true, disableDeferredWipeout: true, notFailBuild: true)
         }
     }
-}
