@@ -18,7 +18,13 @@ pipeline {
             steps {
                 script {
 			bat "dotnet restore --nologo --no-cache"
-			bat "dotnet build --nologo -c Release --no-restore"
+			//bat "dotnet build --nologo -c Release --no-restore"
+			def projectDirectory = 'C:\data\jenkins_home\workspace\ldtestProjects_MSBuilds_MSBuilds\ConsoleApp\ConsoleApp1\ConsoleApp1.sln'
+                    // Navigate to the project directory
+                    dir(projectDirectory) {
+                        // Run the dotnet build command
+                        bat 'dotnet build -c Release'
+		    }
 			print 'Hello World!'
                 }
             }
