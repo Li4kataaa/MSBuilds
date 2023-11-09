@@ -47,6 +47,7 @@ pipeline {
 		stage('Deploy Test') {
             steps {
                 script {
+			branch'main'
                    print 'NOT IMPLEMENTED!'
                 }
             }
@@ -68,6 +69,7 @@ pipeline {
 		stage('Deploy Production') {
             steps {
                 script {
+			branch'master'
                     print 'NOT IMPLEMENTED!'
                 }
             }
